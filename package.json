@@ -33,12 +33,11 @@
     
     "start": "node server.js",
     "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rasheedshina22/globalchef.git"
-  },
+  
   "author": "group3",
   "license": "ISC",
   "bugs": {
